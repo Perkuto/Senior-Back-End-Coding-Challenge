@@ -8,7 +8,7 @@ Submit your pull request to this repository and provide product preview URL.
 
 ### Product Specifications
 * A user may have many pictures
-* Users may add, modify or remove picture
+* Users may add, modify or remove pictures
 * Picture can be either private or public
 
 ### Technical Guidelines
