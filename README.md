@@ -1,8 +1,8 @@
 # Coding Challenge
-Submit your pull request to this repository.
+Submit your pull request to this repository and provide product preview URL.
 
 ### Project Guidelines
-* Expose an API allowing consumers to share pictures
+* Create an API allowing consumers to share pictures
 * Provide API documentation
 * Provide data model diagram
 
