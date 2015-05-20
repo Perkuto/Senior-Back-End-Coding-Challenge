@@ -1,5 +1,5 @@
 # Coding Challenge
-Submit your pull request to this repository and provide product preview URL.
+Fork this repository, complete challenge, submit pull request and provide product preview URL.
 
 ### Project Guidelines
 * Create an API allowing consumers to share pictures
