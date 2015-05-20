@@ -1,4 +1,5 @@
 # Coding Challenge
+Submit your pull request to this repository.
 
 ### Project Guidelines
 * Expose an API allowing consumers to share pictures
