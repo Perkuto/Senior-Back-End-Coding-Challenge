@@ -1,0 +1,25 @@
+user :
+  type: rest
+  resource:     "AcmeDemoBundle:User"
+  name_prefix:  v1_
+
+state :
+  type: rest
+  resource:     "AcmeDemoBundle:State"
+  name_prefix:  v1_
+
+get_all_users:
+    pattern:  /all-users/{page}
+    defaults: { _controller: AcmeDemoBundle:User:getAllUsers, _format: ~, page: all }
+    requirements:
+        _method: GET
+        page: "\d+"
+    name_prefix:  v1_
+
+get_cities_by_radius:
+
+    pattern:  /states/{state}/cities/{city}
+    defaults: { _controller: AcmeDemoBundle:State:getStateCitiesCity, _format: ~, radius: 0, page: all }
+    requirements:
+        _method: GET
+    name_prefix:  v1_

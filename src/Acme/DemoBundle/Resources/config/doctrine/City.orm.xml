@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="Acme\DemoBundle\Entity\Repository\CityRepository" name="Acme\DemoBundle\Entity\City" table="city">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="name" type="string" column="name" length="255"/>
+    <field name="state" type="string" column="state" length="2"/>
+    <field name="status" type="string" column="status" length="20"/>
+    <field name="latitude" type="string" column="latitude" length="255"/>
+    <field name="longitude" type="string" column="longitude" length="255"/>
+  </entity>
+</doctrine-mapping>
