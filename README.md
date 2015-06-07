@@ -1,18 +1,28 @@
-# Coding Challenge
-Fork this repository, complete challenge, submit pull request and provide product preview URL.
+## Installation
 
-### Project Guidelines
-* Create an API allowing consumers to share pictures
-* Provide API documentation
-* Provide data model diagram
+This repository holds the whole Laravel install, in the future it will rely on composer to install this dependency.
 
-### Product Specifications
-* A user may have many pictures
-* Users may add, modify or remove pictures
-* Picture can be either private or public
+1. Clone this repository
+2. Create a database called `perkuto` in your mysql server
+3. Give all rights except grants (or at least all CRUD) to the user `perkuto` on the database mentioned above
 
-### Technical Guidelines
-* PHP Framework
-* MySQL or PostgreSQL
-* REST
-* JSON
+If you want other mysql settings, feel free to edit the .env file at the root of the project.
+
+run the following command: `php artisan migrate:refresh --seed`
+If your mysql parameters are correct this will generate a few users and some photos, creating the tables from scratch.
+This is the fixtures data, this command can be re-run any number of times,
+and will generate some 'random' data for public and private pictures.
+
+for now you can access the following routes:
+
+`GET /user/{user_id}/pictures` to list a user's public photos
+`GET|POST (any) mock/authenticate/{email}/{password}` to authenticate as any user in the db.
+The password is set to `test123`.
+
+Routes for delete and Update Image and its controller have been setup but the code is not yet final.
+
+Please note this is prototype quality code, to be improved.
+
+
+
+
