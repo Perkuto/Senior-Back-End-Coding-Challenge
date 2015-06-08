@@ -26,24 +26,24 @@ The password for all users is set to `test123`. The email will be found in the u
 The controllers could be improved by putting the logic for the PUT and POST images into the image model.
 
 ## API Usage
-`GET /user/{user_id}/images` returns a jsone formed with all public images for the `user_id` in the url.
+`GET /user/{user_id}/images` returns a json formed with all public images for the `user_id` in the url.
 
 Successful example return:
 ````
 [
-                 {"id":28,"name":"28a47f9b2e592309876d5e387bcd6a28.","created_at":"2015-06-07 22:19:52","updated_at":"2015-06-07 22:19:52"},
-                 {"id":29,"name":"6c3bf012b61961e03dc4d9ada6952824.jpeg","created_at":"2015-06-07 22:21:26","updated_at":"2015-06-07 23:38:45"}
+    {"id":28,"name":"28a47f9b2e592309876d5e387bcd6a28.","created_at":"2015-06-07 22:19:52","updated_at":"2015-06-07 22:19:52"},
+    {"id":29,"name":"6c3bf012b61961e03dc4d9ada6952824.jpeg","created_at":"2015-06-07 22:21:26","updated_at":"2015-06-07 23:38:45"}
 ]
 ````
-If the user does not exist, the endpoint returns a 404.
+If the user does not exist, the endpoint returns HTTP code `404`.
 
 
 `DELETE user/image/{id}`
 Successful example return:
 {"success": true}
 
-- If the image does not exist, returns 404
-- If the user is not authorized, returns 403
+- If the image does not exist, returns HTTP code `404`
+- If the user is not authorized, returns HTTP code `403`
 
 `PUT user/image/{id}`
 Expects an image field. If the PUT verb cannot be sent, an optional _method parameter can be passed with value PUT.
@@ -51,8 +51,8 @@ Expects an image field. If the PUT verb cannot be sent, an optional _method para
 ````{"id":28,"name":"28a47f9b2e592309876d5e387bcd6a28.","created_at":"2015-06-07 22:19:52","updated_at":"2015-06-07 22:19:52"}````
 - Invalid file type:
 ````{"error": "Invalid file type}````
-- If the user is not authorized, returns 403
-- If the image does not exist, returns 404
+- If the user is not authorized, returns HTTP code `403`
+- If the image does not exist, returns HTTP code `404`
 
 `POST user/image`
 Expects an image field.
@@ -60,7 +60,7 @@ Expects an image field.
 ````{"id":28,"name":"28a47f9b2e592309876d5e387bcd6a28.","created_at":"2015-06-07 22:19:52","updated_at":"2015-06-07 22:19:52"}````
 - Invalid file type:
 ````{"error": "Invalid file type}````
-- If the user is not authorized, returns 403
+- If the user is not authorized, returns HTTP code `403`
 
 ## How to test
 The endpoints were tested using the POSTMAN chrome extension, but any HTTP console should be able to ease accessing all urls.
