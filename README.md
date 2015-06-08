@@ -34,7 +34,7 @@ Successful example return:
                  {"id":28,"name":"28a47f9b2e592309876d5e387bcd6a28.","created_at":"2015-06-07 22:19:52","updated_at":"2015-06-07 22:19:52"},
                  {"id":29,"name":"6c3bf012b61961e03dc4d9ada6952824.jpeg","created_at":"2015-06-07 22:21:26","updated_at":"2015-06-07 23:38:45"}
 ]
-                 ````
+````
 If the user does not exist, the endpoint returns a 404.
 
 
