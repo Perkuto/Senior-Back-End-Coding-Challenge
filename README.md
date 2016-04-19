@@ -12,7 +12,7 @@ Fork this repository, complete challenge, submit pull request and provide produc
 * Picture can be either private or public
 
 ### Technical Guidelines
-* PHP Framework
+* Any Java Framework
 * MySQL or PostgreSQL
 * REST
 * JSON
