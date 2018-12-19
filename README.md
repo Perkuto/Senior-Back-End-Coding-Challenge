@@ -13,9 +13,7 @@ Koto is a simple photo sharing platform with an open source REST API.
 
 Returns Token:
 ````
-[
 {"Token":"6974740f6d7f2cc35db04ae0ceded6aa3db18c29daca818be09136ee005050b7de5796559199e3478f560ee2c0365104395b8b6957884740c50077ef4ec9b9fa"}
-]
 ````
 
 ### Add or Update Photo /photo
@@ -28,9 +26,7 @@ Returns Token:
 
 Returns Message:
 ````
-[
 {"Message":"Photo successfully uploaded","Photo ID":"c904b813-6805-4074-b8c6-8b45e09a20ad","Title":"Relaxing","Caption":"This is a photo of bench in the woods by the river.","Privacy":"0"}  
-]
 ````
 
 ### Delete Photo /photo
@@ -39,9 +35,7 @@ Returns Message:
 
 Returns Message:
 ````
-[
-  {"Message":"Photo successfully deleted"}
-]
+{"Message":"Photo successfully deleted"}
 ````
 
 ### Delete Token (logout) /auth
@@ -50,9 +44,7 @@ Returns Message:
 
 Returns Message:
 ````
-[
   {"Message":"Token has been deleted"}
-]
 ````
 
 ### Response Codes
