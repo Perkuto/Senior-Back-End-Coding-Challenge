@@ -207,9 +207,8 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
      
         if ($_GET['url'] == "photo") {
 
-            $token = $_GET[token];
-
             // verify token 
+            $token = $_GET[token];
             if ($db->query("SELECT token FROM login_tokens WHERE token=:token", array(':token'=>sha1($token)))) {
 
             $photo_id = $_GET[photo_id];
