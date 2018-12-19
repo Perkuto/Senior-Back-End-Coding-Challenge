@@ -22,7 +22,7 @@ Returns Token
 * Leave "photo_id" empty to upload a new photo.
 * Specify "photo_id" to update existing photo.
 * Demo: https://koto.spaquito.ca/rest-api/photo
-* 
+
 Returns Message
 ````
 [
