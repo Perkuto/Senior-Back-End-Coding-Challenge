@@ -86,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                         // generate uuid for new photo 
                         $photo_id = gen_uuid(); 
                         $action = "insert";
-
                     }
 
                     // if photo is included in POST, upload the photo (force to png)
