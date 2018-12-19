@@ -1,5 +1,5 @@
 # Koto REST API .htaccess
-# Routes - The API can be customized for any "url" such as /photo
-
 RewriteEngine On
+
+# Allow API to use custom routes/urls (such as /auth, /photo)
 RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
