@@ -2,14 +2,14 @@
 Koto is a simple photo sharing platform with an open source REST API.
 
 ### Installation
-* Requires PHP, MariaDB (PDO)
-* Clone this repository
-* Import database from koto.sql (includes demo user)
+* Requires PHP, MariaDB (PDO).
+* Clone this repository.
+* Import database from koto.sql (includes demo user).
 * API Demo: https://koto.spaquito.ca/rest-api/
 * Front-end Demo: https://koto.spaquito.ca
 
 ### Generate Token /auth
-* POST: Accepts "username" and "password"
+* POST: Accepts "username" and "password".
 * Demo: https://koto.spaquito.ca/rest-api/auth (username: demo, password: test)
 
 Returns Token:
@@ -21,7 +21,7 @@ Returns Token:
 ````
 
 ### Add or Update Photo /photo
-* POST: Accepts "token", "photo", "privacy", "caption", "title", "photo_id"
+* POST: Accepts "token", "photo", "privacy", "caption", "title", "photo_id".
 * POST "photo" must be "allowed" format (jpg, png, gif).
 * Leave "photo_id" empty to upload a new photo.
 * Specify "photo_id" to update existing photo.
@@ -36,7 +36,7 @@ Returns Message:
 ````
 
 ### Delete Photo /photo
-* DELETE: Accepts "token", "photo_id"
+* DELETE: Accepts "token", "photo_id".
 * Demo: https://koto.spaquito.ca/rest-api/photo
 
 Returns Message:
@@ -47,7 +47,7 @@ Returns Message:
 ````
 
 ### Delete Token (logout) /auth
-* DELETE: Accepts "token"
+* DELETE: Accepts "token".
 * Demo: https://koto.spaquito.ca/rest-api/auth
 
 Returns Message:
