@@ -1,5 +1,5 @@
 # Koto
-Koto is a simple photo sharing REST API.
+Koto is a simple open source photo sharing platform with a powerful REST API.
 * Requires PHP, MariaDB (PDO)
 * Import database from koto.sql (includes demo user)
 * API Demo: https://koto.spaquito.ca/rest-api/
