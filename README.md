@@ -22,15 +22,27 @@ Returns Token
 
 ### Add or Update Photo /photo
 * POST: Accepts "token", "photo", "privacy", "caption", "title", "photo_id"
-* POST "photo" must be allowed image format.
+* POST "photo" must be "allowed" format (jpg, png, gif).
 * Leave "photo_id" empty to upload a new photo.
 * Specify "photo_id" to update existing photo.
+* Set "privacy" = "1" to set photo as private.
 * Demo: https://koto.spaquito.ca/rest-api/photo
 
 Returns Message
 ````
 [
 {"Message":"Photo successfully uploaded","Photo ID":"c904b813-6805-4074-b8c6-8b45e09a20ad","Title":"Relaxing","Caption":"This is a photo of bench in the woods by the river.","Privacy":"0"}  
+]
+````
+
+### Delete Photo /photo
+* DELETE: Accepts "token", "photo_id"
+* Demo: https://koto.spaquito.ca/rest-api/photo
+
+Returns Message
+````
+[
+  {"Message":"Photo successfully deleted"}
 ]
 ````
 
@@ -45,3 +57,4 @@ Returns Message
 ]
 ````
 
+All API calls return appropriate HTTP response codes (200, 400, 401, 405).
