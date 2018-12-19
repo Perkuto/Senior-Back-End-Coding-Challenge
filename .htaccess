@@ -3,3 +3,7 @@
 # Allow API to use custom routes/urls (such as /auth, /photo)
 RewriteEngine On
 RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
+
+# Force https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
