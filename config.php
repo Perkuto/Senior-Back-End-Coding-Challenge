@@ -6,5 +6,5 @@
 
 // No configuration settings yet; built to be scalable.
 
-// now
+// Now
 $now = date("Y-m-d H:i:s");
