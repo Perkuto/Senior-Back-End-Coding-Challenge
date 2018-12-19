@@ -35,7 +35,7 @@ Returns:
 * A photo can only be deleted by the user that uploaded the photo.
 * Demo: https://koto.spaquito.ca/rest-api/photo
 
-Returns JSON Message:
+Returns Message:
 ````
 {"Message":"Photo successfully deleted"}
 ````
@@ -44,7 +44,7 @@ Returns JSON Message:
 * DELETE: Accepts "token".
 * Demo: https://koto.spaquito.ca/rest-api/auth
 
-Returns JSON Message:
+Returns Message:
 ````
   {"Message":"Token has been deleted"}
 ````
