@@ -4,7 +4,8 @@
 // Project: Koto
 // Description: Simple API for photo sharing
 
-// Koto configuration settings
+// Koto configuration settings.  
+// No configuration settings yet; built to be scalable.
 
 // now
 $now = date("Y-m-d H:i:s");
