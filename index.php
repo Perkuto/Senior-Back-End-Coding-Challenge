@@ -2,7 +2,7 @@
 
 // Coded by Bond on a cold December night in 2018
 // Project: Koto
-// Description: Simple API for photo sharing (https://github.com/Perkuto/Senior-Back-End-Coding-Challenge)
+// Description: Simple API for photo sharing
 
 // Connect to db, load custom functions, load configuration settings
 require_once("connect.php");
