@@ -5,6 +5,7 @@
 // Description: Simple API for photo sharing
 
 // Koto custom functions
+// Only one function so far; built to be scalable.
 
 // generate uuid
 function gen_uuid() {
