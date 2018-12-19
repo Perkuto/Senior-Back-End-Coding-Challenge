@@ -17,7 +17,7 @@ Returns Token:
 ````
 
 ### Add or Update Photo /photo
-* POST: Accepts "token", "photo", "privacy", "caption", "title", "photo_id".
+* POST: Accepts "token", "photo", "title", "caption", "privacy", "photo_id".
 * POST "photo" must be "allowed" format (jpg, png, gif).
 * Leave "photo_id" empty to upload a new photo.
 * Specify "photo_id" to update existing photo.
