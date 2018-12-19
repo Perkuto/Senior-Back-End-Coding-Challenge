@@ -1,6 +1,8 @@
 # Koto
 Koto is a simple photo sharing REST API.
-* Demo: https://koto.spaquito.ca
+* Requires PHP, MariaDB (PDO)
+* API Demo: https://koto.spaquito.ca/rest-api/
+* Front-end Demo: https://koto.spaquito.ca
 
 ### Generate Token /auth
 * POST: Accepts "username" and "password"
