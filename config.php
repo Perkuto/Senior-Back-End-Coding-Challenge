@@ -6,4 +6,5 @@
 
 // Koto configuration settings
 
+// now
 $now = date("Y-m-d H:i:s");
