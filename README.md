@@ -31,6 +31,7 @@ Returns Message:
 
 ### Delete Photo /photo
 * DELETE: Accepts "token", "photo_id".
+* A photo can only be deleted by the user that uploaded the photo.
 * Demo: https://koto.spaquito.ca/rest-api/photo
 
 Returns Message:
