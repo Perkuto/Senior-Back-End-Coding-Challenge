@@ -1,5 +1,5 @@
 # Koto REST API .htaccess
-# By adding the rule below, the API can be customized to work with any "url" such as /auth
+# The API can be customized for any "url" such as /auth
 
 RewriteEngine On
 RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
