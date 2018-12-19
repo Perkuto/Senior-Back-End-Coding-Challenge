@@ -1,8 +1,8 @@
 <?php
 
-// Coded by Bond on a cold December night in 2018
 // Project: Koto
 // Description: Simple API for photo sharing photos
+// Coded by Bond on a cold December night in 2018
 
 // db pdo functions
 class DB {
