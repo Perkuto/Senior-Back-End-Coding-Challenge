@@ -91,6 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                     // if photo is included in POST, upload the photo (force to png)
                     if($_FILES['photo']['name'] != '')
                     {
+                            // photos are uploaded to the /media/ folder by default
                             if(!@copy($file_tmp,'../media/' . $photo_id . '.png'))
                             {
                                 // display errors if there is a problem
