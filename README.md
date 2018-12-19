@@ -13,7 +13,8 @@ Koto is a simple photo sharing platform with an open source REST API.
 
 Returns Token:
 ````
-[  {"Token":"6974740f6d7f2cc35db04ae0ceded6aa3db18c29daca818be09136ee005050b7de5796559199e3478f560ee2c0365104395b8b6957884740c50077ef4ec9b9fa"}  
+[
+{"Token":"6974740f6d7f2cc35db04ae0ceded6aa3db18c29daca818be09136ee005050b7de5796559199e3478f560ee2c0365104395b8b6957884740c50077ef4ec9b9fa"}
 ]
 ````
 
