@@ -4,7 +4,7 @@
 // Description: Simple API for photo sharing photos
 // Coded by Bond on a cold December night in 2018
 
-// db pdo functions
+// db PDO functions
 class DB {
         private $pdo;
         public function __construct($host, $dbname, $username, $password) {
