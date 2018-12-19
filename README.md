@@ -57,4 +57,5 @@ Returns Message
 ]
 ````
 
+### HTTP Response Codes
 All API calls return appropriate HTTP response codes (200, 400, 401, 405).
