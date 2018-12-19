@@ -50,3 +50,7 @@ Returns Message:
 
 ### Response Codes
 All API calls return appropriate HTTP response codes (200, 400, 401, 405).
+
+### Data Model
+
+<img src='https://koto.spaquito.ca/rest-api/koto-data-model.png'>
