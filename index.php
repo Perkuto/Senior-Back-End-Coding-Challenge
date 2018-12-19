@@ -1,9 +1,9 @@
 <?php
 
-// Coded by Bond on a cold December night in 2018
 // Project: Koto
 // Description: Simple API script for photo sharing
 // Core API script /rest-api/index.php
+// Coded by Bond on a cold December night in 2018
 
 // Connect to db, load custom functions, load configuration settings
 require_once("connect.php");
