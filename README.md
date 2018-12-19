@@ -14,17 +14,6 @@ Returns Token
 ]
 ````
 
-### Delete Token (logout) /auth
-* DELETE: Accepts "token"
-* Demo: https://koto.spaquito.ca/rest-api/auth
-
-Returns Message
-````
-[
-  {"Message":"Token has been deleted"}
-]
-````
-
 ### Add or Update Photo /photo
 * POST: Accepts "token", "photo", "privacy", "caption", "title", "photo_id"
 * POST "photo" must be allowed image format.
@@ -39,5 +28,14 @@ Returns Message
 ]
 ````
 
+### Delete Token (logout) /auth
+* DELETE: Accepts "token"
+* Demo: https://koto.spaquito.ca/rest-api/auth
 
+Returns Message
+````
+[
+  {"Message":"Token has been deleted"}
+]
+````
 
