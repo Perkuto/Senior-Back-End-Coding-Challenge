@@ -129,6 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                           // RETURN SUCCESS
                           $arr = array('Message' => 'Photo successfully updated', 'Photo' => $photo_name, 'Photo ID' => $photo_id, 'Title' => $title, 'Caption' => $caption, 'Privacy' => $privacy);
                           echo json_encode($arr);  
+                          http_response_code(200);
                           }
                           else
                           {
@@ -142,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                                 $arr = array('Message' => 'Not authorized to update this photo', 'Photo ID' => $photo_id);
                             }
                             echo json_encode($arr);  
-
+                            http_response_code(401);
                           }
 
                     // end photo update
@@ -156,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
             // POST /rest-api/photo/ token not found
             $arr = array('Message' => 'Bad Token');
             echo json_encode($arr);   
-            
+            http_response_code(401);
             }
             
 
@@ -182,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                             // RETURN SUCCESS (display token)
                             $arr = array('Token' => $token);
                             echo json_encode($arr);   
-
+                            http_response_code(200);
                     } else {
                             // RETURN ERROR (unauthorized, wrong password)
                             $arr = array('Message' => 'Unauthorized');
@@ -229,8 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                 // RETURN
                 $arr = array('Message' => 'Photo successfully deleted');
                 echo json_encode($arr);   
-            
-
+                http_response_code(200);
                 }
                 else
                 {
@@ -250,10 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                       http_response_code(401);  
                       exit();
                     } 
-
-                     
                 }
-
 
         // close token verify if
         }
