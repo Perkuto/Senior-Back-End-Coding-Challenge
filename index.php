@@ -6,7 +6,7 @@
 // Coded by Bond on a cold December night in 2018
 
 // Connect to db, load custom functions, load configuration settings
-require_once("connect.php");
+require_once("database.php");
 require_once("functions.php");
 require_once("config.php");
 
