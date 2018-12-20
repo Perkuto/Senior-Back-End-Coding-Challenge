@@ -1,8 +1,8 @@
 <?php
 
-// Coded by Bond on a cold December night in 2018
 // Project: Koto
-// Description: Simple API for photo sharing
+// Description: Simple photo sharing platform with an open source REST API
+// Coded by Bond on a cold December night in 2018
 
 // Koto custom functions
 // Currently only one function; built to be scalable.
