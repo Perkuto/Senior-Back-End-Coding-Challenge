@@ -1,7 +1,7 @@
 <?php
 
 // Project: Koto
-// Description: Simple API script for photo sharing
+// Description: Simple photo sharing platform with an open source REST API
 // Core API script /rest-api/index.php
 // Coded by Bond on a cold December night in 2018
 
