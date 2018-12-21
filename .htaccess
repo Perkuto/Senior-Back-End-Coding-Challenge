@@ -1,0 +1,9 @@
+# Koto REST API .htaccess
+
+# Allow custom routes/urls
+RewriteEngine On
+RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
+
+# Force https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
