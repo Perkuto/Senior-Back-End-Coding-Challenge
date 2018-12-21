@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                     // RETURN SUCCESS
                         $arr = array('Message' => 'Photo successfully uploaded', 'Photo ID' => $photo_id, 'Title' => $title, 'Caption' => $caption, 'Privacy' => $privacy);
                         echo json_encode($arr);  
-
+                        http_response_code(200);
                     }
                
                     // UPDATE existing photo
@@ -136,7 +136,6 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                           }
                           else
                           {
-
                             // photo not found (perhaps deleted)
                             if($photo_user_id == '') {
                                 $arr = array('Message' => 'Photo not found', 'Photo ID' => $photo_id);
@@ -156,14 +155,12 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
             }
             else
             {
-          
             // POST /rest-api/photo/ token not found
             $arr = array('Message' => 'Bad Token');
             echo json_encode($arr);   
             http_response_code(401);
             }
             
-
         // end POST /rest-api/photo, start POST /rest-api/auth + create token 
         } else if ($_GET['url'] == "auth") {
            
