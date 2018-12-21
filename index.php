@@ -17,18 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         if ($_GET['url'] == "testing") {
         } 
 
-        // force correct POST method for common API calls
+        // force correct POST method for photo API
         else if ($_GET['url'] == "photo") {
             echo '{ "Message": "Incorrect Method" }';
             http_response_code(405);
             exit();
         }
-        else if ($_GET['url'] == "upload") {
-            echo '{ "Message": "Incorrect Method" }';
-            http_response_code(405);
-            exit();
-        }
-
 
 // API _POST calls
 } else if ($_SERVER['REQUEST_METHOD'] == "POST") {
