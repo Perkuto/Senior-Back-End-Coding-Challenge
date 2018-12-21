@@ -21,10 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         // force correct POST method for common API calls
         else if ($_GET['url'] == "photo") {
             echo '{ "Message": "Incorrect Method" }';
+            http_response_code(405);
             exit();
         }
         else if ($_GET['url'] == "upload") {
             echo '{ "Message": "Incorrect Method" }';
+            http_response_code(405);
             exit();
         }
 
@@ -65,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                 // Return error
                 $arr = array('Message' => 'File format not supported');
                 echo json_encode($arr);  
+                http_response_code(415);
                 exit();
             }
 
