@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
         // custom GET call DEBUG FOR TESTING ONLY        
         if ($_GET['url'] == "testing") {
- 
         } 
 
         // force correct POST method for common API calls
@@ -197,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                         echo json_encode($arr); 
                         http_response_code(401);
                 }
-
+                
        // end POST /rest-api/auth
        }
 
