@@ -13,7 +13,7 @@ require_once("config.php");
 // API _GET calls
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
-        // custom GET call DEBUG FOR TESTING ONLY        
+        // DEBUG FOR TESTING ONLY        
         if ($_GET['url'] == "testing") {
         } 
 
